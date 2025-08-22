@@ -4,9 +4,9 @@
       <a href="#home">HOME</a>
       <a href="#premios">PRÊMIOS</a>
       <a href="#comoParticipar">COMO PARTICIPAR</a>
-      <a>RANKING</a>
+      <a href="#ranking">RANKING</a>
       <div class="cta">
-        <a>PARTICIPE</a>
+        <a href="#cta">PARTICIPE</a>
       </div>
     </div>
     <div class="mobileNavGroup">
@@ -24,10 +24,8 @@
     <a @click="toggleModal" href="#home">HOME</a>
     <a @click="toggleModal" href="#premios">PRÊMIOS</a>
     <a @click="toggleModal" href="#comoParticipar">COMO PARTICIPAR</a>
-    <a>RANKING</a>
-    <div class="cta">
-      <a>PARTICIPE</a>
-    </div>
+    <a @click="toggleModal" href="#ranking">RANKING</a>
+    <a @click="toggleModal" href="#cta">PARTICIPE</a>
   </div>
 </template>
 
@@ -64,7 +62,7 @@ const toggleModal = () => {
   display: flex;
   justify-content: space-around;
   justify-items: center;
-  max-width: 1000px;
+  max-width: 1200px;
   a {
     padding: 1em;
   }

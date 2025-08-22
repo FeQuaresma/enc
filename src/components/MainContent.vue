@@ -1,5 +1,6 @@
 <template>
-  <div id="home" class="mainBanner scrollMargin">
+  <div id="home"></div>
+  <div class="mainBanner scrollMargin">
     <img class="mainLogo" src="../assets/material/home/logo-promo.webp" alt="logo-promo" />
   </div>
 
@@ -11,7 +12,7 @@
     <div class="ballon1">
       <img src="../assets/material/premios/premios-balao-1.webp" alt="balao1" />
     </div>
-    <div class="textContent">
+    <div id="cta" class="textContent scrollMargin">
       <p>PARTICIPE DO <span>DESAFIO HELLMANN'S LOOT IRRESISTÍVEL</span></p>
       <p>E CONCORRA A PRÊMIOS ESPECIAIS</p>
       <button>PARTICIPE</button>
@@ -51,6 +52,7 @@
           <img src="../assets/material/como-participar/como-participar-3.webp" alt="howTo3" />
         </div>
       </div>
+      <div id="ranking" class="scrollMargin"></div>
       <img
         class="webTitle"
         src="../assets/material/como-participar/box-texto.webp"
@@ -92,10 +94,9 @@
 
 .ballon2 {
   position: relative;
-  width: 0;
   height: 0;
-  bottom: 200px;
-  left: 350px;
+  bottom: 280px;
+  left: 550px;
   z-index: 101;
 
   img {
@@ -107,12 +108,14 @@
   display: flex;
   background-image: url('../assets/material/home/bg-home.webp');
   background-position: center;
-  min-height: 500px;
+  background-repeat: no-repeat;
+  background-color: var(--marine-blue);
+  min-height: 600px;
   background-size: auto 100%;
   justify-content: center;
 
   img {
-    max-height: 450px;
+    max-height: 550px;
     margin-right: 150px;
   }
 }
@@ -169,6 +172,7 @@
 }
 
 .maioneseContent {
+  padding: 1em 0;
   display: flex;
   justify-content: center;
 
@@ -180,11 +184,25 @@
 .mobileMainBanner {
   display: none;
 }
-
+@media (max-width: 1307px) {
+  .ballon2 {
+    left: 250px;
+  }
+}
+@media (max-width: 1080px) {
+  .mainBanner {
+    min-height: 500px;
+    img {
+      max-height: 450px;
+    }
+  }
+}
 @media (max-width: 920px) {
   .ballon1,
   .ballon2,
-  .maionese {
+  .maionese,
+  .webTitle,
+  .mainBanner {
     display: none;
   }
 
@@ -193,24 +211,6 @@
   }
   .mobileTitle {
     display: block;
-  }
-
-  .webTitle {
-    display: none;
-  }
-
-  .mainBanner {
-    display: none;
-    /* background-image: url('../assets/material/home/bg-home-mob.webp');
-    background-position: bottom;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    object-fit: contain;
-    min-height: 800px;
-    img {
-      object-fit: contain;
-      margin: 0;
-    } */
   }
 
   .mobileMainBanner {
