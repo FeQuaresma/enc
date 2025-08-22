@@ -226,8 +226,8 @@
       max-height: 92vh;
       object-fit: cover;
       object-position: bottom;
-      @media (max-height: 500px) {
-        max-height: 50%;
+      @media (max-height: 830px) {
+        max-height: 830px;
       }
     }
   }
