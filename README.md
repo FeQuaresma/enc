@@ -1,8 +1,6 @@
 ## Visite o site para vizualização rapida
 
-```sh
-vercel.com
-```
+[enc-vert.vercel.app](https://enc-vert.vercel.app/)
 
 ## Instale as dependências
 
