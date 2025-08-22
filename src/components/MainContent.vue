@@ -226,9 +226,6 @@
       max-height: 92vh;
       object-fit: cover;
       object-position: bottom;
-      @media (max-height: 830px) {
-        max-height: 830px;
-      }
     }
   }
 
@@ -246,6 +243,11 @@
   }
   .textContent {
     font-size: 1.5em;
+  }
+}
+@media (max-height: 920px) {
+  .mobileMainBanner .bgMobile {
+    max-height: 920px;
   }
 }
 </style>
