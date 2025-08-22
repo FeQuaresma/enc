@@ -1,0 +1,63 @@
+/* color palette from <https://github.com/vuejs/theme> */
+@font-face {
+  font-family: 'DollopSerif';
+  src: url('./fonts/DollopSerif-Expanded.otf') format('opentype');
+  font-weight: bold; /* Peso normal para Expanded */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DollopSerif';
+  src: url('./fonts/DollopSerif-Condensed.otf') format('opentype');
+  font-weight: normal; /* Peso bold para Condensed */
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --yellow: #facc1f;
+  --blue: #074a75;
+  --marine-blue: #122640;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'DollopSerif', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  border: none;
+  border-radius: 3em;
+  background-color: var(--yellow);
+  color: var(--blue);
+  font-family: 'DollopSerif', sans-serif;
+  font-weight: bold;
+  font-size: 0.7em;
+  padding: 0.6em 1.5em;
+  box-shadow: 4px 4px 8px gray;
+  margin-top: 1em;
+}
+
+button:active {
+  background-color: var(--blue);
+  color: var(--yellow);
+}
+
+a {
+  text-decoration: none;
+}
